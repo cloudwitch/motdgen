@@ -1,10 +1,10 @@
-FROM alpine:latest
+FROM ubuntu:bionic
+
+COPY motdgen.sh /motdgen.sh
 
 RUN apt update &&\
     apt -y upgrade &&\
     apt -y install cowsay cookietool fortune-anarchism fortune-mod fortunes fortunes-bofh-excuses fortunes-mario fortunes-off fortunes-spam &&\
-    
-
-COPY motdgen.sh /motdgen.sh
+    chmod +x /motdgen.sh
 
 CMD "/motdgen.sh"
