@@ -5,6 +5,8 @@ COPY ./motdgen.sh /motdgen.sh
 RUN apt update &&\
     apt -y upgrade &&\
     apt -y install cowsay cookietool fortune-anarchism fortune-mod fortunes fortunes-bofh-excuses fortunes-mario fortunes-off fortunes-spam &&\
+    rm -rf /var/lib/apt/lists/* &&\
+    apt-get clean &&\
     chmod +x /motdgen.sh
 
 CMD "/motdgen.sh"
