@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-COPY motdgen.sh /motdgen.sh
+COPY ./motdgen.sh /motdgen.sh
 
 RUN apt update &&\
     apt -y upgrade &&\
