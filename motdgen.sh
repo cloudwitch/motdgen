@@ -1,2 +1,2 @@
 #!/bin/bash
-[ $[ $RANDOM % 6 ] == 0 ] && /usr/games/fortune -s | /usr/games/cowsay -f `ls -1 /usr/share/cowsay/cows | sort -R | head -1` -n | /usr/games/lolcat || /usr/games/fortune -s | /usr/games/cowsay -f `ls -1 /usr/share/cowsay/cows | sort -R | head -1` -n
+[ $[ $RANDOM % 10 ] == 0 ] && /usr/games/fortune -s | /usr/games/cowsay -f `ls -1 /usr/share/cowsay/cows | sort -R | head -1` -n | /usr/games/lolcat || /usr/games/fortune -s | /usr/games/cowsay -f `ls -1 /usr/share/cowsay/cows | sort -R | head -1` -n
